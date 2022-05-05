@@ -1,6 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { styled } from "@stitches/react";
+import React from "react";
+import "./App.css";
+import logo from "./logo.svg";
+
+const Button = styled("button", {
+  backgroundColor: "#000",
+  borderRadius: "9999px",
+  fontSize: "13px",
+  padding: "10px 15px",
+  "&:hover": {
+    backgroundColor: "lightgray",
+  },
+});
 
 function App() {
   return (
@@ -10,6 +21,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <Button>Button</Button>
         <a
           className="App-link"
           href="https://reactjs.org"
